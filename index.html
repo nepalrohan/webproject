@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Sandbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,14 +20,22 @@
         />
 
         <div class="menu">
+
           <ul class="menu-list">
+          <i class="fa-solid fa-times"  onclick="hideMenu()"></i>
+
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">COURSES</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
+
+
         </div>
+        <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        
+
       </navbar>
 
       <div class="text-area">
@@ -187,13 +196,15 @@
               Doloremque, fugit? Pariatur, odio?
             </p>
             <h3>Cristien Berley</h3>
-            <div>
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
             </div>
+            
+          
           </div>
         </div>
 
@@ -208,16 +219,65 @@
               Doloremque, fugit? Pariatur, odio?
             </p>
             <h3>Cristien Berley</h3>
-            <div>
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
-              <i class="fa fa-star" />
+          
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+
+            
             </div>
+           
           </div>
         </div>
       </div>
     </section>
+
+
+<!-- cta section -->
+
+<section class="cta">
+ <h1>You Can Enroll With Us From
+  <br/>
+  AnyWhere In The World</h1>
+
+  <a href="#" class="visit-us">Contact Us</a>
+</section>
+
+
+
+<!-- footer section -->
+
+<footer class='footer'>
+<h4>About Us </h4>
+<p>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit reiciendis explicabo sequi quas
+  <br/>
+  quam neque obcaecati quo minus inventore.
+</p>
+<div class='connect'>
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-google"></i>
+
+</div>
+<p>Made with Rk Software Solution</p>
+</footer>
+
+
+<script>
+  var menu = document.getElementById("menu");
+  function showMenu() {
+      menu.style.right = "0";
+  }
+  function hideMenu() {
+      menu.style.right = "-200px";
+  }
+
+</script>
+
   </body>
 </html>

@@ -30,6 +30,23 @@ main {
   text-decoration: none;
 }
 
+.menu-list  i{
+  color:#fff;
+  font-size:25px;
+  cursor: pointer;
+  display: none;
+
+}
+
+.nav-bar  i{
+  color:#fff;
+  font-size:25px;
+  cursor: pointer;
+  display: none;
+
+}
+
+
 .menu-list li a {
   list-style: none;
 
@@ -244,3 +261,130 @@ p {
   color: red;
   margin-top: 0px;
 }
+
+
+.rating{
+  display:flex;
+  align-items:center;
+  gap:2px;
+}
+
+
+.cta {
+  margin: 80px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://chiranregmi.github.io/test/images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cta h1 {
+  font-weight: bold;
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 45px;
+  padding: 0;
+
+}
+
+
+.footer{
+
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom:40px;
+  gap:15px;
+}
+
+.footer p{
+  text-align: center;
+}
+
+
+.connect{
+  display: flex;
+  gap:30px;
+  margin-top: 20px;
+}
+
+.connect i{
+  font-size: 20px;
+  color: rgb(233, 52, 52);
+  cursor: pointer;
+}
+
+@media(max-width:700px) {
+  .cta h1 {
+      font-size: 24px;
+  }
+}
+
+
+@media(max-width:700px) {
+  .text-area h1 {
+      font-size: 20px;
+  }
+
+  .menu-list ul li {
+      display: block;
+  }
+
+  .menu-list {
+      position: absolute;
+      background: #f44366;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+  }
+
+  .menu-list i{
+      display: block;
+      color: #fff;
+      font-size: 22px;
+      padding: 10px;
+  }
+
+  .nav-bar i{
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+}
+
+}
+
+
+@media (max-width:700px){
+
+.container{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+}
+
+}
+
+
+
+@media (max-width:700px){
+
+  .campus-container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+  }
+  
+  }
